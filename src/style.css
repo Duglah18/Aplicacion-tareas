@@ -87,6 +87,7 @@ body {
 .elemento:hover {
   background-color: #444552;
   cursor: pointer;
+
 }
 
 .btnDelete {
