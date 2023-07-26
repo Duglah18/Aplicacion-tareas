@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado de Tareas</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="taskForm" class="formulario">
+        <label for="title" class="Titulo">Titulo</label>
+        <input type="text" name="title" placeholder="Escribe un titulo" class="Titulo-input">
+        
+        <label for="description" class="Descripcion">Descripción</label>
+        <textarea name="description" rows="3" placeholder="Escribe una descripción" class="Descripcion-input"></textarea>
+        
+        <button class="Guardar">Guardar</button>
+        
+      </form>
+      
+      <div id="tasksList" class="Lista-Tareas">
+
+      </div>
+      
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
