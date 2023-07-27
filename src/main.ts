@@ -22,6 +22,21 @@ taskform?.addEventListener('submit', e => {
     const title = taskform['title'] as unknown as HTMLInputElement
     const text = taskform['description'] as unknown as HTMLTextAreaElement
 
+    const noValidoTitle = title.value.trim()
+    const noValidoText = text.value.trim()
+
+    if (noValidoTitle == "" || noValidoText == ""){
+        Toastify({
+            text: "El titulo y la descripcion no pueden estar vacios",
+            style: {
+                background: "red",
+            },
+            close: true,
+            position: 'center'
+        }).showToast()
+        return null
+    } 
+
     tasks.push({
         title: title.value,
         description: text.value,
